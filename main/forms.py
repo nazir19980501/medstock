@@ -3,7 +3,7 @@ from .models import Medicine, Sale
 class MedicineForm(forms.ModelForm):
     class Meta:
         model=Medicine
-        fields=['name','company','category','buy_price','sell_price','quantity','low_stock_threshold','expiry_date','batch_number']
+        fields=['name','company','category','buy_price','sell_price','quantity','low_stock_threshold','expiry_date']
         widgets={'expiry_date':forms.DateInput(attrs={'type':'date'})}
 class SaleForm(forms.ModelForm):
     class Meta:
